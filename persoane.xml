@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Aleea Petrescu</strada>
+            <numar>10</numar>
+            <localitate>Vaslui</localitate>
+            <judet>Vaslui</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="2">
+        <nume>Bulgaru</nume>
+        <prenume>Vlad</prenume>
+        <varsta>20</varsta>
+        <adresa>
+            <strada>Aleea Petrescu</strada>
+            <numar>10</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    <persoana id="3">
+        <nume>Bahnaru</nume>
+        <prenume>George</prenume>
+        <varsta>19</varsta>
+        <adresa>
+            <strada>Aleea Petrescu</strada>
+            <numar>11</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+</persoane>   
