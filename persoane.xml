@@ -11,6 +11,10 @@
             <judet>Vaslui</judet>
             <tara>Romania</tara>
         </adresa>
+        <resume>
+            <experience>10 ani</experience>
+            <education>Universitatea Ghoerghe Asachi Iasi</education>
+        </resume>
     </persoana>
     <persoana id="2">
         <nume>Bulgaru</nume>
@@ -23,6 +27,10 @@
             <judet>Iasi</judet>
             <tara>Romania</tara>
         </adresa>
+        <resume>
+            <experience>2 ani</experience>
+            <education>Universitatea Ghoerghe Asachi Iasi</education>
+        </resume>
     </persoana>
     <persoana id="3">
         <nume>Bahnaru</nume>
@@ -35,5 +43,9 @@
             <judet>Iasi</judet>
             <tara>Romania</tara>
         </adresa>
+        <resume>
+            <experience>5 ani</experience>
+            <education>Universitatea Alexandru Ioan Cuza Iasi</education>
+        </resume>
     </persoana>
 </persoane>   
