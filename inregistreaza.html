@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1><strong>Yamaha MT-07</strong></h1><br/>
+        </header>
+        <nav>
+            <a href="./despre.html">Despre</a> |
+            <a href="./video.html">Video</a> |
+            <a href="./inregistreaza.html">Inregistrează-te</a> |
+        </nav><br/>
+        <p>
+            <br/><br/>
+            <fieldset>
+                <legend><strong>Inregistrează-te</strong></legend>
+                Username:       <input type="text" id="Username" name="Username"><br/><br/>
+                Password:       <input type="password" id="Password" name="Password"><br/><br/>
+                Last Name:      <input type="text" id="LastName" name="LastName"><br/><br/>
+                First Name:     <input type="text" id="FirstName" name="FirstName"><br/><br/>
+                Email:          <input type="email" id="Email" name="Email"><br/><br/>
+                Phone Number:   <input type="tel" id="PhoneNumber" name="PhoneNumber"><br/><br/>
+                Sex:            <select id="sex" name="sex" >
+                                    <option value="masculin">Masculin</option>
+                                    <option value="feminin">Feminin</option>
+                                </select><br/><br/>
+                Favorite Food:  <input list="Foods" id="Food" name="Food" />              
+                                <datalist id="Foods">
+                                    <option value="Steak"></option>
+                                    <option value="French Fries"></option>
+                                    <option value="Fish"></option>
+                                    <option value="Pasta"></option>
+                                </datalist><br/><br/>
+                Favorite Colour:  <select id="culori" name="culori" >
+                                        <option value="roșu">rosu</option>
+                                        <option value="galben">galben</option>
+                                        <option value="albastru">albastru</option>
+                                        <option value="verde">verde</option>
+                                    </select><br/><br/>
+                Date of birth:  <input type="date" id="date" name="date"/><br/><br/>
+                Time of birth:  <input type="time" id="time" name="time"/><br/><br/>
+                Age:            <input type="range" id="age" name="age" min="0" max="120"/><br/><br/>
+                Personal Page URL:  <input type="url" id="PersonalUrl" name="PersonalUrl"/><br/><br/>
+                Description:        <textarea id="Description" name="Description" rows="4" cols="60">
+                                    </textarea><br/><br/>
+                <button id="Inregistreaza" name="Inregistreaza" disabled>Inregistrează</button>
+                                    
+            </fieldset>
+            <svg width="120" height="100">
+                <circle cx="40" cy="70" r="10" stroke="green" stroke-width="4" fill="yellow" />
+                
+                <circle cx="80" cy="70" r="10" stroke="green" stroke-width="4" fill="yellow" />
+                <rect x="25" y="20" width="80" height="40" stroke="red" stroke-width="6" fill="blue" />
+                <rect x="35" y="10" width="10" height="40" stroke="black" stroke-width="6" fill="gray" />
+                <rect x="60" y="20" width="30" height="20" stroke="black" stroke-width="6" fill="gray" />
+              </svg>
+              
+    </body>
+</html>
