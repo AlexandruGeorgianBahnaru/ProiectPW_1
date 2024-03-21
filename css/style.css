@@ -1,16 +1,32 @@
 @keyframes example {
-  0%   {color: red;}
-  25%  {color: yellow;}
-  50%  {color: blue;}
-  100% {color: green;}
+  50%  {color: white;}
+  100% {color: black;}
+}
+
+head {
+  background-color: cadetblue;
+}
+
+body {
+  background-color: darkgray;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .button {
+  width: 150px;
+  height: 40px;
   color: black;
   background-color: bisque;
   border-radius: 6px;
   font-size: large;
   font-family: 'Times New Roman', Times, serif;
+}
+
+.p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
 }
 button:hover {
   -webkit-transform: translateY(-2px);
@@ -24,10 +40,24 @@ button:hover {
   gap: 2px;
 }
 
-h1 {
+.h1 {
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;  
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-duration: 15s;
   animation-name: example;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border-color: black;
+  outline: auto;
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 8px;
+  outline: auto;
 }
