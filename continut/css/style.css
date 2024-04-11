@@ -8,15 +8,16 @@ head {
 }
 
 body {
-  background-color: darkgray;
+  background-color: white;
   max-width: 100%;
   max-height: 100%;
   font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
 }
 
-.button {
+button {
   width: 150px;
-  height: 40px;
+  height: 30px;
   color: black;
   background-color: bisque;
   border-radius: 6px;
@@ -24,23 +25,59 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
+nav button{
+  width: 150px;
+  height: 40px;
+}
+
+button:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  background-color: turquoise;
+}
+
+.current-page-button{
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  background-color: turquoise;
+}
+
 .p{
   font-family: 'Times New Roman', Times, serif;
   font-size: larger;
 }
-button:hover {
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-  color: red;
-}
+
 .nav {
   display: flex;             
-  align-items: center;       
+  align-items: right;       
   justify-content: left;  
   gap: 2px;
+  background-color: lightgray;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+nav a{
+  padding: 3px;
+}
+
+input,textarea, select{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  border-radius: 6px;
+  padding-left: 2px;
+}
+
+input[type=text]{
+    width: 30px;
+    
 }
 
 .h1 {
+  border-radius: 6px;
+  background-color: gray;
+  padding: 10px;
+  text-align: center;
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;  
   animation-iteration-count: infinite;
@@ -48,16 +85,25 @@ button:hover {
   animation-name: example;
 }
 
-img {
+img,iframe {
   max-width: 100%;
-  height: auto;
   border-radius: 8px;
   border-color: black;
   outline: auto;
+  padding: 4px;
 }
 
 iframe {
   max-width: 100%;
   border-radius: 8px;
   outline: auto;
+}
+
+fieldset{
+  font-size: larger;
+}
+
+fieldset legend{
+  text-align-last: center;
+  font-size: 25px;
 }
