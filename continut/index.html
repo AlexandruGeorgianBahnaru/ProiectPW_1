@@ -10,13 +10,15 @@
         <header>
         </header>
         <nav class="nav">
-            <a href="./despre.html"><button class="button" id="buttonDespre"> Despre </button></a> 
-            <a href="./video.html"> <button class="button" id="buttonVideo"> Video </button></a> 
-            <a href="./desen.html"> <button class="button" id="buttonDesen"> Desen </button></a> 
-            <a href="./inregistreaza.html"> <button class="button" id="buttonInregistreaza"> Inregistrează-te </button></a> 
-            <a href="./invat.html"><button class="button" id="buttonInvat"> Invat </button></a> 
+            <button class="button" id="buttonDespre" name="menuButton" onclick="schimbaContinut('despre');buttonHighlight('despre')"> Despre </button>
+            <button class="button" id="buttonVideo" name="menuButton" onclick="schimbaContinut('video');buttonHighlight('video')"> Video </button>
+            <button class="button" id="buttonDesen" name="menuButton" onclick="schimbaContinut('desen');buttonHighlight('desen')"> Desen </button>
+            <button class="button" id="buttonInregistreaza" name="menuButton" onclick="schimbaContinut('inregistreaza');buttonHighlight('inregistreaza')"> Inregistrează-te </button>
+            <button class="button" id="buttonInvat" name="menuButton" onclick="schimbaContinut('invat');buttonHighlight('invat')"> Invat </button>
         </nav>
         <br/><br/>
-       
+        <main id="continut">
+
+        </main>
     </body>
 </html>

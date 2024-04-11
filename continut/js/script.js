@@ -39,33 +39,65 @@ function updateRangeinput(val) {
     document.getElementById('labelAge').value=val; 
   }
 
-window.addEventListener('DOMContentLoaded', (event) => {
+  function schimbaContinut(resursa, jsFisier, jsFunctie) {
+    var xhttp = new XMLHttpRequest();
+    
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("continut").innerHTML = this.responseText;
+            
+            if (jsFisier) {
+                var elementScript = document.createElement('script');
+                elementScript.onload = function () {
+                    console.log("Fișierul JavaScript a fost încărcat cu succes.");
+                    if (jsFunctie) {
+                        window[jsFunctie]();
+                    }
+                };
+                elementScript.src = jsFisier;
+                document.head.appendChild(elementScript);
+            } else {
+                if (jsFunctie) {
+                    window[jsFunctie]();
+                }
+            }
+        }
+    };
 
-    const currentPage = window.location.pathname;
-    const desenPage = "desen.html";
-    const desprePage = "despre.html";
-    const videoPage = "video.html";
-    const inregistreazaPage = "inregistreaza.html";
-    const invatPage = "invat.html";
-    if (currentPage.endsWith(desenPage)) {
+    xhttp.open("GET", resursa + ".html", true);
+    xhttp.send();
+}
+function removeClass(){
+    document.getElementById('buttonDespre').classList.remove('current-page-button');
+    document.getElementById('buttonDesen').classList.remove('current-page-button');
+    document.getElementById('buttonVideo').classList.remove('current-page-button');
+    document.getElementById('buttonInvat').classList.remove('current-page-button');
+    document.getElementById('buttonInregistreaza').classList.remove('current-page-button');
+
+}
+
+function buttonHighlight(name){
+    removeClass();
+    if (name == "desen") {
       // If the associated page is loaded, change the button style
       document.getElementById('buttonDesen').classList.add('current-page-button');
+
     }
-    else if (currentPage.endsWith(videoPage)) {
+    else if (name == "video") {
         // If the associated page is loaded, change the button style
         document.getElementById('buttonVideo').classList.add('current-page-button');
     }
-    else if (currentPage.endsWith(desprePage)) {
+    else if (name == "despre") {
         // If the associated page is loaded, change the button style
         document.getElementById('buttonDespre').classList.add('current-page-button');
     }
-    else if (currentPage.endsWith(invatPage)) {
+    else if (name == "invat") {
         // If the associated page is loaded, change the button style
         document.getElementById('buttonInvat').classList.add('current-page-button');
     }
-    else if (currentPage.endsWith(inregistreazaPage)) {
+    else if (name == "inregistreaza") {
         // If the associated page is loaded, change the button style
         document.getElementById('buttonInregistreaza').classList.add('current-page-button');
     }
-  });
+  }
 
