@@ -1,0 +1,15 @@
+[{ 
+    "utilizator": "test",
+    "parola": "test",
+    "nume": "test",
+    "prenume": "test",
+    "email": "test@gmail.com",
+    "numarTelefon": "0771762016",
+    "sex": "masculin",
+    "mancarePreferata": "Steak",
+    "culoarePreferata": "galben",
+    "dataNasterii": "2003-01-01",
+    "oraNasterii": "01:01",
+    "perosnalUrl": "www.google.com",
+    "descriere": "Sunt un baiat la ac"
+}]

@@ -18,7 +18,7 @@
                 First Name:     <input type="text" id="FirstName" name="FirstName"><br/><br/>
                 Email:          <input type="email" id="Email" name="Email"><br/><br/>
                 Phone Number:   <input type="tel" id="PhoneNumber" name="PhoneNumber"><br/><br/>
-                Sex:            <select id="sex" name="sex" >
+                Sex:            <select id="Sex" name="sex" >
                                     <option value="masculin">Masculin</option>
                                     <option value="feminin">Feminin</option>
                                 </select><br/><br/>
@@ -29,7 +29,7 @@
                                     <option value="Fish"></option>
                                     <option value="Pasta"></option>
                                 </datalist><br/><br/>
-                Favorite Colour:  <select id="culori" name="culori" >
+                Favorite Colour:  <select id="Colors" name="culori" >
                                         <option value="roșu">rosu</option>
                                         <option value="galben">galben</option>
                                         <option value="albastru">albastru</option>
@@ -42,8 +42,8 @@
                 Personal Page URL:  <input type="url" id="PersonalUrl" name="PersonalUrl"/><br/><br/>
                 Description:        <textarea id="Description" name="Description" rows="4" cols="60">
                                     </textarea><br/><br/>
-                <button class="button" id="Inregistreaza" name="Inregistreaza" disabled>Inregistrează</button>
-                                    
+                <button class="button" id="Inregistreaza" name="Inregistreaza" onclick="adaugaUtilizator()">Inregistrează</button><br/><br/>
+                <div id="rezultatInregistrare"></div>
             </fieldset>
             
               
